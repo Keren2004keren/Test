@@ -40,13 +40,13 @@ print(f"The movie length is {hours} hours and {minutes} minutes long.")
 four_digit1: int = 0
 while not 1000 <= four_digit1 <= 9999:
     four_digit1: int = int(input("Enter a four digit number: "))
-    print(f"The digit in the right is {four_digit1 % 10}.")
+print(f"The digit in the right is {four_digit1 % 10}.")
 
 # 6
 four_digit2: int = 0
 while not 1000 <= four_digit2 <= 9999:
     four_digit2: int = int(input("Enter a four digit number: "))
-    print(f"The digit second to right is {(four_digit2 % 100 - four_digit2 % 10) // 10}.")
+print(f"The digit second to right is {(four_digit2 % 100 - four_digit2 % 10) // 10}.")
 
 # 7
 two_digit1: int = 0

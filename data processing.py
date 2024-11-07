@@ -78,15 +78,20 @@ if 100 <= num_digit <= 999:
         print("False")
 else:
     print("The number is not a 3 digit number.")
-
-# 7
+#
+# # 7
 
 # 8
 prime_num: int = int(input("Enter a number: "))
-for num_prime in range(2, prime_num + 1):
-    is_prime: bool = True
+is_prime: bool = True
+if prime_num < 2:
+    is_prime: bool = False
+else:
     for i in range(2, int(prime_num ** 0.5) + 1):
-        if num_prime % i == 0:
+        if prime_num % i == 0:
             is_prime: bool = False
-    if is_prime:
-        print(num_prime, end=" ")
+            break
+if is_prime:
+    print(f"{prime_num} is a prime number.")
+else:
+    print(f"{prime_num} is not a prime number.")
